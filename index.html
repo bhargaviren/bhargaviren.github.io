@@ -9,117 +9,72 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <style>
-        section {
-            margin-top: 2em;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/styles/styles.css">
 </head>
 
 <body>
-    <div class="container">
-        <header class="bg-light rounded-3 p-5">
-            <h1>CSE4020 : Machine Learning</h1>
+    <header class="d-flex justify-content-center py-3 text-bg-dark">
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">About</a></li>
+          <li class="nav-item"><a href="./teaching.html" class="nav-link">Teaching</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Publications</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Software</a></li>
+        </ul>
+    </header>
 
-            <dl>
-                <dt>Instructor</dt>
-                <dd>Dr. R. Bhargavi</dd>
-            </dl>
+    <div class="container mt-3">
 
-            <dl>
-                <dt>Venue</dt>
-                <dd>
-                    <table>
-                        <tr>
-                            <td>Slot D1</td>
-                            <td>Delta Block 305</td>
-                        </tr>
-                        <tr>
-                            <td>Slot D2 </td>
-                            <td>Delta Block 305</td>
-                        </tr>
-                    </table>
-                </dd>
-            </dl>
-        </header>
+        <div id="intro">
+            <p class="h1">Bhargavi R</p>
+            <p class="lead">Professor</p>
+            <p><a href="https://scholar.google.co.in/citations?hl=en&user=AaljAEgAAAAJ" target = "_blank">Google Scholar</a></p>
 
-        <section>
-            <h2>Course Overview</h2>
             <p>
-                This course provides an introduction to machine learning and applications of Machine learning using Scikit-Learn.
-                The course covers the topics like: Supervised learning, Unsupervised learning, Model Evaluation and practical issues. 
-                More details on the topics coved can be obtained from the  syllabus </p>
+                Dr. Bhargavi is a Professor in the <em>School of Computer Science and Engineering (SCOPE), Vellore Institute of Technology, Chennai, India</em>. She has also served as <strong>HoD (M.Tech CSE Specialization in Business Analytics)</strong> in the <em>School of Computer Science and Engineering</em> during the period 2019-2022. She has more than 25 years of Industry, Academic and Research experience.
             </p>
-        </section>
-        <section>
-            <h2>Syllabus</h2>
             <p>
-                You can find the syllabus of this course <a  href="ML syllabus.pdf"> here</a>
-                 </p>
-        </section>
-        <section>
-            <h2>Prerequisites</h2>
+                Prior to joining VIT (Vellore Institute of Technology), she worked as a <strong>Senior R&D Engineer</strong> in <em>Xambala Inc., a Semantic Processor Company</em>. She has also worked in <em>SSN College of Engineering, Chennai</em> as an academician and in <em>National Aeronautical Laboratories (NAL), Bangalore</em> as a <strong>Graduate Trainee</strong>.
+            </p>
             <p>
-                Prior knowledge of the following subjects help you to understand appreciate the
-                Machine Learning Course better</p>
+                She received her <strong>Ph.D in Computer Science</strong> from <em>Anna University</em> in 2014, and <strong>M.Tech in Computer Science and Engineering</strong> from <em>IIT Madras</em> in 2004.
+            </p>
+        </div>
+
+        <div id="research">
+            <h2>Research</h2>
+            <p>
+                Bhargavi's research interests include Machine Learning, Deep Learning, Data Analytics. She has authored and published several research papers in IEEE/ACM/Springer International Conferences and refereed Journals. She has also authored Book Chapters in highly reputed research reference books.
+            </p>
+
+            <h3>Thesis</h3>
+            <p>Complex Event Processing for Sensor Network Applications</p>
+
+            <h3>PhD Guidance</h3>
+            <h4 class="h6">Completed</h4>
             <ul>
-                <li>Linear Algebra</li>
-                <li>Probability and Statistics</li>
-                <li>Calculus</li>
-                <li>Python</li>
+                <li>
+                    <span>Jothi Prabha A</span> -
+                    <span>Prediction of Dyslexia and its stages based on eye gaze points - 2021</span>
+                </li>
+                <li>
+                    <span>Maya Gopal P.S</span> -
+                    <span>Efficient Paddy Crop Yield Prediction using Machine Learning - 2020</span>
+                </li>
             </ul>
-        </section>
 
-        <section>
-            <h2>Textbooks</h2>
-            <p>Following are the text books for reference - </p>
+            <h4 class="h6">Current</h3>
             <ul>
-                <li>Ethem Alpaydin, Introduction to Machine Learning , MIT Press, Prentice Hall of India, Third Edition 2014.</li>
-                <li>Tom Mitchell, Machine Learning, McGraw Hill, 3rd Edition,1997.</li>
-                <li>Kevin P. Murphy ”Machine Learning: A Probabilistic Perspective”, The MIT Press, 2012.</li>
-                <li>Gareth James , Daniela Witten , Trevor Hastie , Robert Tibshirani, An Introduction to Statistical Learning with Applications in R </li>
-                
+                <li>Mr. Subramanian Arumugam</li>
+                <li>Ms. Sujitha. M </li>
             </ul>
-        </section>
-
-        <section>
-            <h2>Tentative Schedule</h2>
-            <table class="table">
-                <thead>
-                    <th>Date</th>
-                    <th>Lecture</th>
-                    <th>Readings</th>
-                    <th>Announcements</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Tue, 30th Aug</td>
-                        <td>Lecture 1: Intro [<a href="">Slides</a>]</td>
-                        <td>
-                            <ul>
-                                <li>Ethem Alpaydin, Introduction to Machine Learning , MIT Press, Prentice Hall of India, Third Edition 2014.</li>
-                                <li>Tom Mitchell, Machine Learning, McGraw Hill, 3rd Edition,1997.</li>
-                                <li>Kevin P. Murphy ”Machine Learning: A Probabilistic Perspective”, The MIT Press, 2012.</li>
-                                <li>Gareth James , Daniela Witten , Trevor Hastie , Robert Tibshirani, An Introduction to Statistical Learning with Applications in R </li>
-                            </ul>
-                        </td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <footer>
-            <address>
-                You can contact the staff at
-                <a href="mailto:bhargavi.r@vit.ac.in">Bhargavi R</a>
-            </address>
-        </footer>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+    <script src="assets/scripts/custom.js"></script>
 </body>
 
 </html>

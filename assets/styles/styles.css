@@ -1,0 +1,11 @@
+section {
+    margin-top: 2em;
+}
+
+.container {
+    width: 60%;
+}
+
+#intro, #research {
+    text-align: justify;
+}

@@ -6,6 +6,7 @@ section {
     width: 60%;
 }
 
-#intro, #research {
+#intro,
+#research {
     text-align: justify;
 }

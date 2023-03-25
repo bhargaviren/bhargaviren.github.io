@@ -1,0 +1,11 @@
+a {
+    text-decoration: none;
+}
+
+td>ul {
+    padding-left: 1rem;
+}
+
+th:nth-of-type(3) {
+    width: 20%;
+}

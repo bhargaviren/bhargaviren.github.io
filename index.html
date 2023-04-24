@@ -11,6 +11,13 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="assets/styles/styles.css">
+    <style>
+        .profile-pic {
+            height: 150px;
+            width: 150px;
+            box-shadow: 0 0 5px gray;
+        }
+    </style>
 </head>
 
 <body>
@@ -26,10 +33,16 @@
     <div class="container mt-3">
 
         <div id="intro">
-            <p class="h1">Bhargavi R</p>
-            <p class="lead">Professor</p>
-            <p><a href="https://scholar.google.co.in/citations?hl=en&user=AaljAEgAAAAJ" target="_blank">Google
-                    Scholar</a></p>
+            <div class="d-flex flex-row justify-content-between align-items-end mb-4">
+                <div class="title">
+                    <p class="h1">Bhargavi R</p>
+                    <p class="lead">Professor</p>
+                    <p><a href="https://scholar.google.co.in/citations?hl=en&user=AaljAEgAAAAJ" target="_blank">Google
+                            Scholar</a></p>
+                </div>
+                <img src="assets/images/profile.jpeg" alt="profile-pic" class="rounded-circle profile-pic"
+                    height="150px">
+            </div>
 
             <p>
                 Dr. Bhargavi is a Professor in the <em>School of Computer Science and Engineering (SCOPE), Vellore

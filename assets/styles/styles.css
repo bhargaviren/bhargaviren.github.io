@@ -10,3 +10,8 @@ section {
 #research {
     text-align: justify;
 }
+
+
+.title {
+    line-height: 10px;
+}

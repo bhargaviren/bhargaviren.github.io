@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ML Wintwer 2024-25</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/styles/text-styles.css">
+</head>
+
+<body>
+    <header class="d-flex justify-content-center py-3 text-bg-dark">
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="../index.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="../teaching.html" class="nav-link active" aria-current="page">Teaching</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">Publications</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Software</a></li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <header class="bg-light rounded-3 p-5">
+            <h1>BCSE209L - Machine Learning</h1>
+
+            <dl>
+                <dt>Instructor</dt>
+                <dd>Dr. Bhargavi R</dd>
+            </dl>
+
+            <dl>
+                <dt> Slot And Venue Details</dt>
+                <table>
+                    <tr>
+                        <td>Slot : D1 + TD1  </td>
+                        <td>Venue: AB3 Block 407</td>
+                    </tr>
+                    
+                </table>
+            </dl>
+        </header>
+
+        <section>
+            <h2>Course Overview</h2>
+            <p>
+                This course provides an introduction to Machine Learning and applications of Machine Learning using
+                Scikit-Learn.
+                The course covers the topics like: Supervised learning, Unsupervised learning, Model Evaluation and
+                practical issues.
+                More details on the topics covered can be obtained from the syllabus
+            </p>
+        </section>
+
+        <section>
+            <h2>Syllabus</h2>
+            <p>
+                You can find the syllabus of this course <a
+                    href="https://drive.google.com/file/d/1GhILsgVz8VqhPy4W0JvaFYpBXgKdvkJe/view?usp=drive_link"
+                    target="_blank"> here</a>
+            </p>
+        </section>
+
+        <section>
+            <h2>Prerequisites</h2>
+            <p>
+                Prior knowledge of the following subjects help you to understand appreciate the
+                Machine Learning Course better
+            </p>
+            <ul>
+                <li>Linear Algebra</li>
+                <li>Probability and Statistics</li>
+                <li>Calculus</li>
+                <li>Python</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Textbooks</h2>
+            <p>Following are the text books for reference - </p>
+            <ul>
+                <li>Ethem Alpaydin, "Introduction to Machine Learning" , MIT Press, Prentice Hall of India, Third
+                    Edition 2014.</li>
+                <li>Tom Mitchell, "Machine Learning", McGraw Hill, 3rd Edition,1997.</li>
+                <li>Kevin P. Murphy ”Machine Learning: A Probabilistic Perspective”, The MIT Press, 2012.</li>
+                <li>Gareth James , Daniela Witten , Trevor Hastie , Robert Tibshirani, "An Introduction to Statistical
+                    Learning with Applications in R" </li>
+                <li>Sebastian Raschka, Vahid Mirjalili , "Python Machine Learning: Machine Learning and Deep Learning
+                    with Python, scikit-learn, and TensorFlow 2" ,Third Edition</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Tentative Schedule</h2>
+            <table class="table">
+                <thead>
+                    <th>Date <img src="../assets/icons/calendar-check.svg" alt=""></th>
+                    <th>Lecture <img src="../assets/icons/easel2.svg" alt=""></th>
+                    <th>Readings <img src="../assets/icons/book-half.svg" alt=""></th>
+                    <th>Announcements <img src="../assets/icons/balloon.svg" alt=""></th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="4" class="bg-success text-center text-white">
+                            Welcome to Machine Learning!
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Thu, 1th Dec</td>
+                        <td>Lecture 1: Meet and Greet, Introduction to Machine Learning [<a
+                                href="https://drive.google.com/file/d/199oDDIKft9ip2ZZYZyzjZPDacdXVf4gt/view?usp=drive_link"
+                                target="_blank">Slides</a>]</td>
+                        <td>
+                            <ul>
+                                <li>Ch 1 - Alpaydin</li>
+                                <li>Ch 1 - Mitchell</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Tue, 16th Dec</td>
+                        <td>Lecture 2: Introduction to ML, Applications of ML, Formal definition of ML [<a
+                                href="https://drive.google.com/file/d/199oDDIKft9ip2ZZYZyzjZPDacdXVf4gt/view?usp=drive_link"
+                                target="_blank">Slides</a>]</td>
+                        <td>
+                            <ul>
+                                <li>Ch 1 - Alpaydin</li>
+                                <li>Ch 1 - Mitchell</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                     <!--   <td>Thu, 18th July</td>
+                        <td>Lecture 3:  ML paradigms and applications[<a
+                                href="https://drive.google.com/file/d/17RhTc0QGeYnqpd3kyCotzTVuRc3BzVJ0/view?usp=drive_link"
+                                target="_blank">Slides</a>]</td>
+                        <td>
+                            <ul>
+                                <li>Ch 1 - Mitchell</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mon, 22nd July</td>
+                        <td>Lecture 4: Nearest Neighbors Introduction, Intution, One NN[<a
+                                href="https://drive.google.com/file/d/13dMariUfOxVc4Lm2Ihz2C6vy76-VsFfp/view?usp=drive_link"
+                                target="_blank">Slides</a>]</td>
+                        <td>
+                            <ul>
+                                <li>Ch 1, 8 - Alpaydin</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Tue, 23rd July</td>
+                        <td>Lecture 5: KNN Classification, Regression [<a
+                                href="https://drive.google.com/file/d/13dMariUfOxVc4Lm2Ihz2C6vy76-VsFfp/view?usp=drive_link"
+                                target="_blank">Slides</a>]</td>
+                        <td>
+                            <ul>
+                                <li>Ch 1, 8 - Alpaydin</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Thu, 25th July</td>
+                        <td>Lecture 6: KNN Numericals, Regression, type of regression Introduction [<a
+                                href="https://drive.google.com/file/d/13dMariUfOxVc4Lm2Ihz2C6vy76-VsFfp/view?usp=drive_link"
+                                target="_blank">Slides</a>]</td>
+                        <td>
+                            <ul>
+                                <li>Ch 1, 8 - Alpaydin</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mon, 29th July</td>
+                        <td>Lecture 7: Simple Linear Regression, Hypothesis, Cost function, Objective function [<a
+                                href="https://drive.google.com/file/d/1VM3QB1P4xizoGgN2dipGCLXQtvK3xkuF/view?usp=drive_link"
+                                target="_blank">Slides</a>]</td>
+                        <td>
+                            <ul>
+                                <li>Ch 3 - ISLR</li>
+                                <li>Ch 4 - Alpaydin</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Tue, 30th July</td>
+                        <td>Lecture 8: Gradient, Closed form solution, Gradient discent [<a
+                                href="https://drive.google.com/file/d/1VM3QB1P4xizoGgN2dipGCLXQtvK3xkuF/view?usp=drive_link"
+                                target="_blank">Slides</a>]</td>
+                        <td>
+                            <ul>
+                                <li>Ch 3 - ISLR</li>
+                                <li>Ch 4 - Alpaydin</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                        <td>Thu, 1st Aug</td>
+                        <td>Lecture 9: Multiple Linear regression [<a
+                                href="https://drive.google.com/file/d/1VM3QB1P4xizoGgN2dipGCLXQtvK3xkuF/view?usp=drive_link"
+                                target="_blank">Slides</a>][<a
+                                href="https://drive.google.com/file/d/16UCD5v8MsL6edOPaPR0U-MUiGkqcZOja/view?usp=drive_link" 
+                                target="_blank">Normal solution - Solved Example</a>] [<a
+                                href="https://drive.google.com/file/d/1Rr1GpubKSw3D02sIMmJd_md65DKF_yCA/view?usp=drive_link" 
+                                target="_blank">Gradient Descent - Solved Example</a>]</td>
+                        <td>
+                            <ul>
+                                <li>Ch 3 - ISLR</li>
+                                <li>Ch 4 - Alpaydin</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                        <td>Mon, 5th Aug</td>
+                        <td>Lecture 10: Weighted KNN, Version space, Candidate Elimination introduction [<a
+                                href="https://drive.google.com/file/d/1GPZVnaYuYj8cot2P0TYvCW5lkNKhN6IN/view?usp=drive_link"
+                                target="_blank">Slides</a>]</td>
+                        <td>
+                            <ul>
+                                
+                            </ul>
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                        <td>Tue, 6th Aug</td>
+                        <td>Lecture 11: Candidate Elimination [<a
+                                href="https://drive.google.com/file/d/1fu5ieuTME_yvBQ_W9ahbD5iMUYJRpzIq/view?usp=drive_link"
+                                target="_blank">Slides</a>]</td>
+                        <td>
+                            <ul>
+                                <li>Ch 2 - Mitchell</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                        <td>Thu, 8th Aug</td>
+                        <td>Lecture 12: Perceptron, PLA [<a
+                                href="https://drive.google.com/file/d/1uWiwbguwIam8n6rRYSAuQJiMJJT6DdlS/view?usp=drive_link"
+                                target="_blank">Slides</a>]</td>
+                        <td>
+                            <ul>
+                                <li>Ch 2 - Sebastian</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                    </tr>
+                        <td>Mon, 12th Aug</td>
+                        <td>Lecture 13: Perceptron, Numericals [<a
+                                href="https://drive.google.com/file/d/1uWiwbguwIam8n6rRYSAuQJiMJJT6DdlS/view?usp=drive_link"
+                                target="_blank">Slides</a>]</td>
+                        <td>
+                            <ul>
+                                <li>Ch 2 - Sebastian</li>
+                            
+                            </ul>
+                        </td>
+                        <td></td>
+                    </tr>
+                        <td>Tue, 13th Aug</td>
+                        <td>Lecture 14: Logistic Regression [<a
+                                href="https://drive.google.com/file/d/1HdLmjwXDdjukI-wRt98fNMqECoR9oBvZ/view?usp=drive_link"
+                                target="_blank">Slides</a>]</td>
+                        <td>
+                            <ul>
+                                <li>Ch 4 - ISLR</li>
+                                <li>Ch 4 - Alpaydin</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Mon, 19th Aug</td>
+                        <td>Lecture 15: Decision Tree Introduction, Training with Classification Error as attripute selection criteria [<a
+                                href="https://drive.google.com/file/d/1R5u-Yj77RGGFp6ztkfOhUzESq1-7K8-E/view?usp=drive_link"
+                                target="_blank">Slides</a>]</td>
+                        <td>
+                            <ul>
+                                <li>Ch 8 - ISLR</li>
+                                <li>Ch 9 - Alpaydin</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Tue, 20th Aug</td>
+                        <td>Lecture 16: Entropy, ID3 Introduction [<a
+                                href="https://drive.google.com/file/d/1R5u-Yj77RGGFp6ztkfOhUzESq1-7K8-E/view?usp=drive_link"
+                                target="_blank">Slides</a>]</td>
+                        <td>
+                            <ul>
+                                <li>Ch 8 - ISLR</li>
+                                <li>Ch 9 - Alpaydin</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Thu, 22nd Aug</td>
+                        <td>Lecture 17: ID3, Practice problems[<a
+                                href="https://drive.google.com/file/d/1iHJj1QfUV4YTXRelf46U1ZyEvnPN6Xa2/view?usp=drive_link"
+                                target="_blank">Practice problems</a>]</td>
+                        <td>
+                            <ul>
+                                <li>Ch 8 - ISLR</li>
+                                <li>Ch 9 - Alpaydin</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mon, 2nd Sept</td>
+                        <td>Lecture 18: CART, Binary tree training with Gini[<a
+                                href="https://drive.google.com/file/d/1R5u-Yj77RGGFp6ztkfOhUzESq1-7K8-E/view?usp=drive_link"
+                                target="_blank">Slides</a>]</td>
+                        <td>
+                            <ul>
+                                <li>Ch 8 - ISLR</li>
+                                <li>Ch 9 - Alpaydin</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Tue, 3rd Sept</td>
+                        <td>Lecture 19: Regression with DT[<a
+                                href="https://drive.google.com/file/d/1R5u-Yj77RGGFp6ztkfOhUzESq1-7K8-E/view?usp=drive_link"
+                                target="_blank">Slides</a>]</td>
+                        <td>
+                            <ul>
+                                <li>Ch 8 - ISLR</li>
+                                <li>Ch 9 - Alpaydin</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Thu, 5th Sept</td>
+                        <td>Lecture 20: Handling Continuous attributes[<a
+                                href="https://drive.google.com/file/d/1R5u-Yj77RGGFp6ztkfOhUzESq1-7K8-E/view?usp=drive_link"
+                                target="_blank">Slides</a>]</td>
+                        <td>
+                            <ul>
+                                <li>Ch 8 - ISLR</li>
+                                <li>Ch 9 - Alpaydin</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mon, 9th Sept</td>
+                        <td>Lecture 21: Probabilistic Learning, Bayes theorem, Naive Bayes classification[<a
+                                href="https://drive.google.com/file/d/1-su7IENkTjsTWalEjTXEFYDU2nmf5ryg/view?usp=drive_link"
+                                target="_blank">Slides</a>]</td>
+                        <td>
+                            <ul>
+                                <li>Ch 6 - Mitchel</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Tue, 10th Sept</td>
+                        <td>Lecture 22: Naive Bayes classification example, Zero probability, Laplacian smoothing, Gaussian NB [<a
+                                href="https://drive.google.com/file/d/1-su7IENkTjsTWalEjTXEFYDU2nmf5ryg/view?usp=drive_link"
+                                target="_blank">Slides</a>]</td>
+                        <td>
+                            <ul>
+                                <li>Ch 6 - Mitchel</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Thu, 12th Sept</td>
+                        <td>Lecture 23: Multinomial NB, Bernoulli NB, Multi Layer Perceptron[<a
+                                href="https://drive.google.com/file/d/1-su7IENkTjsTWalEjTXEFYDU2nmf5ryg/view?usp=drive_link"
+                                target="_blank">Slides</a>]</td>
+                        <td>
+                            <ul>
+                                <li>Ch 6 - Mitchel</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mon, 16th Sept</td>
+                        <td>Lecture 24: Multi Layer Perceptron[<a
+                                href="https://drive.google.com/file/d/1ub0FfQExt115JM90WBoTCl9IUzY2BXXS/view?usp=drive_link"
+                                target="_blank">Slides</a>]</td>
+                        <td>
+                            <ul>
+                                <li>Ch 11 - Alpaydin</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mon, 23th Sept</td>
+                        <td>Lecture 25: Multi Layer Perceptron[<a
+                                href="https://drive.google.com/file/d/1ub0FfQExt115JM90WBoTCl9IUzY2BXXS/view?usp=drive_link"
+                                target="_blank">Slides</a>]</td>
+                        <td>
+                            <ul>
+                                <li>Ch 11 - Alpaydin</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                    </tr>
+                </tr>
+                <tr>
+                    <td>Tue, 24th Sept</td>
+                    <td>Lecture 26: Introduction to Unsupervised learning, Clustering - Introduction, K-Means (Partitioning based) clustering[<a
+                            href="https://drive.google.com/file/d/13Pxco5BNwl8ci6xLwenkER2nLWLP39UK/view?usp=drive_link"
+                            target="_blank">Slides</a>]</td>
+                    <td>
+                        <ul>
+                            <li>Ch 7 - Alpaydin</li>
+                            <li>Ch 10 - ISLR</li>
+                        </ul>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Thu, 26th Sept</td>
+                    <td>Lecture 27: K-Means clustering, K-Means++ initialization [<a
+                            href="https://drive.google.com/file/d/13Pxco5BNwl8ci6xLwenkER2nLWLP39UK/view?usp=drive_link"
+                            target="_blank">Slides</a>]</td>
+                    <td>
+                        <ul>
+                            <li>Ch 7 - Alpaydin</li>
+                            <li>Ch 10 - ISLR</li>
+                        </ul>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Mon, 30th Sept</td>
+                    <td>Lecture 28: K-Modes Clustering, Introduction to hierarchical Clustering, AGNES
+                            [<a
+                            href="https://drive.google.com/file/d/1eTw64FWOt9fM8-2M85bsrbPHHDhjdoUh/view?usp=drive_link"
+                            target="_blank">k_modes Slides</a>]
+                            [<a
+                            href="https://drive.google.com/file/d/1S2q9BxMzmuyH-hLaF3HSEJK7XA1m--_P/view?usp=drive_link"
+                            target="_blank">AGNES Slides</a>]
+                        </td>
+                    <td>
+                        <ul>
+                            <li>Ch 7 - Alpaydin</li>
+                            <li>Ch 10 - ISLR</li>
+                        </ul>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Tue, 1st Oct</td>
+                    <td>Lecture 29: Hierarchical Clustering, DIANA[<a
+                            href="https://drive.google.com/file/d/16BgElpSZ1i2Dqp4BysNoJ_egdXi5DikV/view?usp=drive_link"
+                            target="_blank">Slides</a>]</td>
+                    <td>
+                        <ul>
+                            <li>Ch 7 - Alpaydin</li>
+                            <li>Ch 10 - ISLR</li>
+                        </ul>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Thu, 3rd Oct</td>
+                    <td>Lecture 30: Desity based Clustering, DBSCAN, Self Organizing Maps(SOM)
+                        [<a
+                            href="https://drive.google.com/file/d/1SIBKcjfieVJnMIqJI87jso7ZR_jwFpDI/view?usp=drive_link"
+                            target="_blank">DBSCAN Slides</a>]
+                            [<a
+                            href="https://drive.google.com/file/d/1JkS9Slt6TLud0sC00SEe3QWpBxKQGlJn/view?usp=drive_link"
+                            target="_blank">SOM Slides</a>]
+                    <td>
+                        <ul>
+                            
+                        </ul>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Mon, 7th Oct</td>
+                    <td>Lecture 31: Guest Lecture
+                            
+                    <td>
+                        <ul>
+                            
+                        </ul>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Tue, 8th Oct</td>
+                    <td>Lecture 32: Class Imbalancing, Techniques for handling imbalanced data, Classification metrics[<a
+                            href="https://drive.google.com/file/d/1K65XuUag1UNbN-f_VSRaTVA6moesN_W9/view?usp=drive_link"
+                            target="_blank">Slides</a>]</td>
+                    <td>
+                        <ul>
+                            <li>Ch 5 - ISLR</li>
+                        </ul>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Mon, 21 Oct</td>
+                    <td>Lecture 33: Maxumum margin classifier[<a
+                            href="https://drive.google.com/file/d/1BTr7teJZMRr_gjPWsELAf62equwQLAjQ/view?usp=drive_link"
+                            target="_blank">Slides</a>]</td>
+                    <td>
+                        <ul>
+                            <li>Ch 13 - Alpadin</li>
+                            <li>Ch 9 - ISLR</li>
+                        </ul>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Tue, 22 Oct</td>
+                    <td>Lecture 34: Soft margin classifier (SVC)[<a
+                            href="https://drive.google.com/file/d/1BTr7teJZMRr_gjPWsELAf62equwQLAjQ/view?usp=drive_link"
+                            target="_blank">Slides</a>]</td>
+                    <td>
+                        <ul>
+                            <li>Ch 13 - Alpadin</li>
+                            <li>Ch 9 - ISLR</li>
+                        </ul>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Thu, 24 Oct</td>
+                    <td>Lecture 35: Kernel SVM[<a
+                            href="https://drive.google.com/file/d/1BTr7teJZMRr_gjPWsELAf62equwQLAjQ/view?usp=drive_link"
+                            target="_blank">Slides</a>]</td>
+                    <td>
+                        <ul>
+                            <li>Ch 13 - Alpadin</li>
+                            <li>Ch 9 - ISLR</li>
+                        </ul>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Mon, 4th Nov</td>
+                    <td>Lecture 36: SVM - Numericals [<a
+                            href="https://drive.google.com/file/d/1BTr7teJZMRr_gjPWsELAf62equwQLAjQ/view?usp=drive_link"
+                            target="_blank">Slides</a>]
+                    <td>
+                        <ul>
+                            <li>Ch 9 - ISLR</li>
+                            <li>Ch 13 - Alpaydin</li>
+                        </ul>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Tue, 5th Nov</td>
+                    <td>Lecture 37: Expectation Maximization[<a
+                            href="https://drive.google.com/file/d/1d7QTv-o1sbZjLsvYThXKe85AM6s81DNn/view?usp=drive_link"
+                            target="_blank">Slides</a>]
+                    <td>
+                        <ul>
+                            <li>Ch 8 - ISLR</li>
+                            <li>Ch 11 - Alpaydin</li>
+                        </ul>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Thu, 7th Nov</td>
+                    <td>Lecture 38: Ensemble Models - Introduction[<a
+                            href="https://drive.google.com/file/d/1schVwzkj-aglLgZKZjzYzrHhtO2Y4bFm/view?usp=sharing"
+                            target="_blank">Slides</a>]
+                    <td>
+                        <ul>
+                            <li>Ch 8 - ISLR</li>
+                            <li>Ch 11 - Alpaydin</li>
+                        </ul>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Mon,11th Nov</td>
+                    <td>Lecture 39: Boosing, Random Forest[<a
+                            href="https://drive.google.com/file/d/1schVwzkj-aglLgZKZjzYzrHhtO2Y4bFm/view?usp=sharing"
+                            target="_blank">Slides</a>]
+                    <td>
+                        <ul>
+                            <li>Ch 8 - ISLR</li>
+                            <li>Ch 11 - Alpaydin</li>
+                        </ul>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Tue, 12th Nov</td>
+                    <td>Lecture 40: Bagging, Adaboost, Stacking[<a
+                            href="https://drive.google.com/file/d/1schVwzkj-aglLgZKZjzYzrHhtO2Y4bFm/view?usp=sharing"
+                            target="_blank">Slides</a>]
+                    <td>
+                        <ul>
+                            <li>Ch 8 - ISLR</li>
+                            <li>Ch 11 - Alpaydin</li>
+                        </ul>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Mon, 14th Nov</td>
+                    <td>Lecture 41: Reinforcement Learning - Introduction[<a
+                            href="https://drive.google.com/file/d/1kkvfbk8pxPPwr5kKsLylaeHewGxP9d-U/view?usp=drive_link"
+                            target="_blank">Slides</a>]
+                    <td>
+                        <ul>
+                            <li>Ch 13 - Tom Mitchell</li>
+                            <li>Ch 18 - Alpaydin</li>
+                        </ul>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Thu, 14th Nov</td>
+                    <td>Lecture 42: Reinforcement Learning[<a
+                            href="https://drive.google.com/file/d/1kkvfbk8pxPPwr5kKsLylaeHewGxP9d-U/view?usp=drive_link"
+                            target="_blank">Slides</a>]
+                    <td>
+                        <ul>
+                            <li>Ch 13 - Tom Mitchell</li>
+                            <li>Ch 18 - Alpaydin</li>
+                        </ul>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Mon, 18th Nov</td>
+                    <td>Lecture 43: Q- Learning[<a
+                            href="https://drive.google.com/file/d/1kkvfbk8pxPPwr5kKsLylaeHewGxP9d-U/view?usp=drive_link"
+                            target="_blank">Slides</a>]
+                    <td>
+                        <ul>
+                            <li>Ch 13 - Tom Mitchell</li>
+                            <li>Ch 18 - Alpaydin</li>
+                        </ul>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Tue, 19th Nov</td>
+                    <td>Lecture 44: CAT 2 QP DIscussion<a
+                            
+                    <td>
+                        <ul>
+                            
+                        </ul>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Thu, 21st Nov</td>
+                    <td>Lecture 45: Discussion<a
+                            
+                    <td>
+                        <ul>
+                            
+                        </ul>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="bg-success text-center text-white">
+                        Course Completed. All the Best!
+                    </td>
+                </tr> -->
+
+
+                </tbody>
+            </table>
+        </section>
+
+        <footer>
+            <address class="text-center text-muted">
+                You can contact the staff at
+                <a href="mailto:bhargavi.r@vit.ac.in" target="_blank">bhargavi.r@vit.ac.in</a>
+            </address>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="../assets/scripts/custom.js"></script>
+</body>
+
+</html>
